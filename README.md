@@ -1,6 +1,6 @@
 ![logo](https://github.com/eriktoller/VPAEM/blob/main/VPAEM_logo.png)
 # VPAEM (Vertical Plane Analytic Element Model)
-The Vertical Plane Analytic Element Model (VPAEM) is a computer program for modelling groundwater flow in the vertical plane. The program includes multiple groundwater features, e.g. fractures, cavities, inhomogeneities and more. It is written in `C++` and is run through a *MATLAB* script.
+The Vertical Plane Analytic Element Model (VPAEM) is a computer program for modelling groundwater flow in the vertical plane. The program includes multiple groundwater features, e.g. fractures, cavities, inhomogeneities and more. The program is written in `C++` and run through a *MATLAB* script.
 
 The program has been developed based on the limitless analytic element introduced in Strack (2018) and include:
 - constant pressure elements
@@ -9,13 +9,13 @@ The program has been developed based on the limitless analytic element introduce
 - blocking fractures
 - wells
 
-This program has been developed using *MATLAB* and *Microsoft Visual Stuido*; only the `.m`-, `.cpp`- and `.exe`-files are included in the repository. The solution also uses the Eigen library (Guennebaud & Jacob, 2010).
+This program has been developed using *MATLAB* and *Microsoft Visual Stuido*; only the `.m`-, `.cpp`- and `.exe`-files are included in the repository. The program use the Eigen library (Guennebaud & Jacob, 2010).
 
 ## Instructions
-The plots are generated using the *MATLAB* program `run_VPGM.m`. The script automatically calls the `C++` program which solves the system and feeds the solution back to *MATLAB* which plots the results.
+The plots are generated using the *MATLAB* program `run_VPAEM.m`. The script automatically calls the `C++` program which solves the system and feeds the solution back to *MATLAB* which plots the results. The data is saved as `data_files\simulation_[date]_[version].mat`.
 
 ## Input Data
-This list contains all the definitions of the input data defined in `run_VPGM.m`.
+This list contains all the definitions of the input data defined in `run_VPAEM.m`.
 
 ### Global Properties
 - `W_uni` uniform flow rate (complex)
