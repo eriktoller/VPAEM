@@ -20,7 +20,15 @@ This list contains all the definitions of the user input data defined in `run_VP
 ### Constant pressure elements
 ### Inhomogeneities
 ### Drainging fracutres
+-`z1b`
+-`z2b`
+-`kb`
+-`bb`
 ### Blocking fractures
+-`z1a`
+-`z2a`
+-`ka`
+-`ba`
 ### Wells
 
 
