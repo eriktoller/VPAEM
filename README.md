@@ -30,7 +30,9 @@ This list contains all the definitions of the user input data defined in `run_VP
 - `ka` hydraulic conductivity for blocking fractures (real vector)
 - `ba` fracture width for blocking fractures (real vector)
 ### Wells
-
+- `zw` coordinates for wells (complex vector)
+- `Qw` discharges for wells (real vector)
+- `rw` radii of wells (real vector)
 
 ### Ploting properties:
 - `xfrom` the starting value for x-axis
