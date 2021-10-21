@@ -41,8 +41,11 @@ The following functions are included for the plotting scheme in MATLAB
 ## Authors
 VPAEM is developed by:
 Erik Å.L. Toller
+
 Department of Earth Sciences,
+
 Uppsala University, Uppsala, Sweden
+
 ORCID 0000-0002-7793-3998
 
 ## License and contributing
