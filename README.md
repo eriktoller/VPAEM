@@ -14,10 +14,10 @@ This program has been developed using *MATLAB* and *Microsoft Visual Stuido*; on
 ## Instructions
 The plots are generated using the *MATLAB* program `run_VPGM.m`. The script automatically calls the `C++` program which solves the system and feeds the solution back to *MATLAB* which plots the results.
 
-## Input data
+## Input Data
 This list contains all the definitions of the input data defined in `run_VPGM.m`.
 
-### Global properties
+### Global Properties
 - `W_uni` uniform flow rate (complex)
 - `k` hydraulic conductivity of continuum (double)
 - `rho` density of groundwtaer (double)
@@ -25,17 +25,17 @@ This list contains all the definitions of the input data defined in `run_VPGM.m`
 - `h` reference elevation (double)
 - `zref` coordinates for reference point (complex)
 - `fi0` hydraulic head at reference point (double)
-### Blocking fractures
+### Blocking Fractures
 - `z1a` start coordinates for blocking fractures (complex vector)
 - `z2a` end coordinates for blocking fractures (complex vector)
 - `ka` hydraulic conductivity for blocking fractures (double vector)
 - `ba` fracture width for blocking fractures (double vector)
-### Drainging fracutres
+### Drainging Fracutres
 - `z1b` start coordinates for draining fractures (complex vector)
 - `z2b` end coordinates for draining fractures (complex vector)
 - `kb` hydraulic conductivity for draining fractures (double vector)
 - `bb` fracture width for draining fractures (double vector)
-### Constant pressure elements
+### Constant Pressure Elements
 - `z1c` start coordinates for constant pressure elements (complex vector)
 - `z2c` end coordinates for constant pressure elements (complex vector)
 ### Inhomogeneities
@@ -46,7 +46,7 @@ This list contains all the definitions of the input data defined in `run_VPGM.m`
 - `zw` coordinates for wells (complex vector)
 - `Qw` discharges for wells (double vector)
 - `rw` radii of wells (double vector)
-### Solver and ploting properties
+### Solver and Ploting Properties
 - `ma` number of coefficients for blocking fractures (integer)
 - `mfara` number of far-field correction coefficients for blocking fractures (integer)
 - `mb` number of coefficients for draining fractures (integer)
@@ -65,11 +65,13 @@ This list contains all the definitions of the input data defined in `run_VPGM.m`
 - `Ny` number of grid points in the y-direction (integer)
 - `lvs` number of contour levels
 
-## Plotting functions
-The following functions are included for the plotting scheme in MATLAB
+## External Functions
+The following functions are necissary for the plotting scheme in *MATLAB*:
 - `creat_figure.m` creat the figure window
 - `Plot_line.m` plots a line from `z1` to `z2`
-- `Contour_flow_net.m` contours a flow net
+- `Plot_cric.m` plots a circle
+- `Contour_flow_net.m` contours the flow net
+- `Phi_from_fi.m` computes the discharge potiential
 
 ## Author
 VPAEM is developed by:\
@@ -78,7 +80,7 @@ Erik Å.L. Toller\
 *Uppsala University, Uppsala, Sweden*\
 *ORCID 0000-0002-7793-3998*
 
-## License and contributing
+## License
 VPAEM is licensed under the MIT license (see LICENSE.md).
 
 ## Citations
