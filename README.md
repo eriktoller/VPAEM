@@ -20,15 +20,15 @@ This list contains all the definitions of the user input data defined in `run_VP
 ### Constant pressure elements
 ### Inhomogeneities
 ### Drainging fracutres
--`z1b`
--`z2b`
--`kb`
--`bb`
+- `z1b` start coordinates for draining fractures (complex vector)
+- `z2b` end coordinates for draining fractures (complex vector)
+- `kb` hydraulic conductivity for draining fractures (real vector)
+- `bb` fracture width for draining fractures (real vector)
 ### Blocking fractures
--`z1a`
--`z2a`
--`ka`
--`ba`
+- `z1a` start coordinates for blocking fractures (complex vector)
+- `z2a` end coordinates for blocking fractures (complex vector)
+- `ka` hydraulic conductivity for blocking fractures (real vector)
+- `ba` fracture width for blocking fractures (real vector)
 ### Wells
 
 
