@@ -15,32 +15,55 @@ This program has been developed using *MATLAB* and *Microsoft Visual Stuido*; on
 The plots are generated using the MATLAB program `run_VPGM.m`. The script automatically calls the ´C++´ program which solves the system and plots the results. To run the program simply run the MATLAB script.
 
 ## Input data
-This list contains all the definitions of the user input data defined in `run_VPGM.m`. These are the model properties:
+This list contains all the definitions of the input data defined in `run_VPGM.m`.
 
-### Constant pressure elements
-### Inhomogeneities
-### Drainging fracutres
-- `z1b` start coordinates for draining fractures (complex vector)
-- `z2b` end coordinates for draining fractures (complex vector)
-- `kb` hydraulic conductivity for draining fractures (real vector)
-- `bb` fracture width for draining fractures (real vector)
+### Global properties
+- `W_uni` uniform flow rate (complex)
+- `k` hydraulic conductivity of continuum (double)
+- `rho` density of groundwtaer (double)
+- `g` acceleration due to gravity (double)
+- `h` reference elevation (double)
+- `zref` coordinates for reference point (complex)
+- `fi0` hydraulic head at reference point (double)
 ### Blocking fractures
 - `z1a` start coordinates for blocking fractures (complex vector)
 - `z2a` end coordinates for blocking fractures (complex vector)
-- `ka` hydraulic conductivity for blocking fractures (real vector)
-- `ba` fracture width for blocking fractures (real vector)
+- `ka` hydraulic conductivity for blocking fractures (double vector)
+- `ba` fracture width for blocking fractures (double vector)
+### Drainging fracutres
+- `z1b` start coordinates for draining fractures (complex vector)
+- `z2b` end coordinates for draining fractures (complex vector)
+- `kb` hydraulic conductivity for draining fractures (double vector)
+- `bb` fracture width for draining fractures (double vector)
+### Constant pressure elements
+- `z1c` start coordinates for constant pressure elements (complex vector)
+- `z2c` end coordinates for constant pressure elements (complex vector)
+### Inhomogeneities
+- `z1d` start coordinates for inhomogeneity elements (complex vector)
+- `z2d` end coordinates for inhomogeneity elements (complex vector)
+- `kd` hydraulic conductivity for inhomogeneity elements (double vector)
 ### Wells
 - `zw` coordinates for wells (complex vector)
-- `Qw` discharges for wells (real vector)
-- `rw` radii of wells (real vector)
-
-### Ploting properties:
-- `xfrom` the starting value for x-axis
-- `xto` the end value for the x-axis
-- `yfrom` the starting value for the y-axis
-- `yto` the end value for the y-axis
-- `Nx` the number of grid points in the x-diraction
-- `Ny` the number of grid points in the y-direction
+- `Qw` discharges for wells (double vector)
+- `rw` radii of wells (double vector)
+### Solver and ploting properties
+- `ma` number of coefficients for blocking fractures (integer)
+- `mfara` number of far-field correction coefficients for blocking fractures (integer)
+- `mb` number of coefficients for draining fractures (integer)
+- `mfarb` number of far-field correction  coefficients for draining fractures (integer)
+- `mc` number of coefficients for constant pressure elements (integer)
+- `mfarc` number of far-field correction  coefficients for constant pressure elements (integer)
+- `md` number of coefficients for inhomogeneity elements (integer)
+- `mfard` number of far-field correction  coefficients for inhomogeneity elements (integer)
+- `Nc` number of integral points for constant pressure elements (integer)
+- `N` multiplier for number of solution points for blocking fractures, draining fractures and inhomogeneity elements (double)
+- `xfrom` starting value for x-axis (double)
+- `xto` end value for the x-axis (double)
+- `yfrom` starting value for the y-axis (double)
+- `yto` end value for the y-axis (double)
+- `Nx` number of grid points in the x-diraction (integer)
+- `Ny` number of grid points in the y-direction (integer)
+- `lvs` number of contour levels
 
 ## Plotting functions
 The following functions are included for the plotting scheme in MATLAB
@@ -48,7 +71,7 @@ The following functions are included for the plotting scheme in MATLAB
 - `Plot_line.m` plots a line from `z1` to `z2`
 - `Contour_flow_net.m` contours a flow net
 
-## Authors
+## Author
 VPAEM is developed by:\
 Erik Å.L. Toller\
 *Department of Earth Sciences,*\
