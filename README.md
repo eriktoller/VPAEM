@@ -12,7 +12,7 @@ The program has been developed based on the limitless analytic element introduce
 This program has been developed using *MATLAB* and *Microsoft Visual Stuido*; only the `.m`-, `.cpp`- and `.exe`-files are included in the repository. The solution also uses the Eigen library (Guennebaud & Jacob, 2010).
 
 ## Instructions
-The plots are generated using the MATLAB program `run_VPGM.m`. The script automatically calls the ´C++´ program which solves the system and plots the results. To run the program simply run the MATLAB script.
+The plots are generated using the *MATLAB* program `run_VPGM.m`. The script automatically calls the `C++` program which solves the system and feeds the solution back to *MATLAB* which plots the results.
 
 ## Input data
 This list contains all the definitions of the input data defined in `run_VPGM.m`.
