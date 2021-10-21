@@ -1,6 +1,6 @@
 ![logo](https://github.com/eriktoller/VPAEM/blob/main/VPAEM_logo.png)
 # VPAEM (Vertical Plane Analytic Element Model)
-The Vertical Plane Analytic Element Model (VPAEM) is a computer program used to model groundwater flow in the vertical plane. The program includes multiple groundwater features, e.g. fractures, cavities, inhomogeneities and more. It is written in ´C++´ and is run through a *MATLAB* script.
+The Vertical Plane Analytic Element Model (VPAEM) is a computer program for modelling groundwater flow in the vertical plane. The program includes multiple groundwater features, e.g. fractures, cavities, inhomogeneities and more. It is written in ´C++´ and is run through a *MATLAB* script.
 
 The program has been developed based on the limitless analytic element introduced in Strack (2018) and include:
 - constant pressure elements
@@ -16,9 +16,15 @@ The plots are generated using the MATLAB program `run_VPGM.m`. The script automa
 
 ## Input data
 This list contains all the definitions of the user input data defined in `run_VPGM.m`. These are the model properties:
-- text
 
-These are the plotting properties:
+### Constant pressure elements
+### Inhomogeneities
+### Drainging fracutres
+### Blocking fractures
+### Wells
+
+
+### Ploting properties:
 - `xfrom` the starting value for x-axis
 - `xto` the end value for the x-axis
 - `yfrom` the starting value for the y-axis
@@ -30,6 +36,17 @@ These are the plotting properties:
 The following functions are included for the plotting scheme in MATLAB
 - `creat_figure.m` creat the figure window
 - `Plot_line.m` plots a line from `z1` to `z2`
+- `Contour_flow_net.m` contours a flow net
+
+## Authors
+VPAEM is developed by:
+Erik Å.L. Toller
+Department of Earth Sciences,
+Uppsala University, Uppsala, Sweden
+ORCID 0000-0002-7793-3998
+
+## License and contributing
+VPAEM is licensed under the MIT license (see LICENSE.md).
 
 ## Citations
 The program has been used in the following paper:
