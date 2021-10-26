@@ -14,6 +14,12 @@ This program has been developed using *MATLAB* and *Microsoft Visual Stuido*; on
 ## Instructions
 The plots are generated using the *MATLAB* program `run_VPAEM.m`. The script automatically calls the `C++` program which solves the system and feeds the solution back to *MATLAB* which plots the results. The data is saved as `data_files\simulation_[date]_[version].mat`.
 
+To run a model:
+1. Open `run_VPAEM.m` in *MATLAB*
+2. Insert your input data in the editor
+3. Run the program
+4. The progress is printed in the command window and the flow net and pressure contours are ploted automatically
+
 ## Input Data
 This list contains all the definitions of the input data defined in `run_VPAEM.m`.
 
@@ -30,7 +36,7 @@ This list contains all the definitions of the input data defined in `run_VPAEM.m
 - `z2a` end coordinates for blocking fractures (complex vector)
 - `ka` hydraulic conductivity for blocking fractures (double vector)
 - `ba` fracture width for blocking fractures (double vector)
-### Drainging Fracutres
+### Draining Fracutres
 - `z1b` start coordinates for draining fractures (complex vector)
 - `z2b` end coordinates for draining fractures (complex vector)
 - `kb` hydraulic conductivity for draining fractures (double vector)
