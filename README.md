@@ -18,7 +18,8 @@ To run a model:
 1. Open `run_VPAEM.m` in *MATLAB*
 2. Insert your input data in the editor
 3. Run the program
-4. The progress is printed in the command window and the flow net and pressure contours are ploted automatically
+4. The progress is printed in the command window
+5. The flow net and pressure contours are plotted automatically
 
 ## Input Data
 This list contains all the definitions of the input data defined in `run_VPAEM.m`.
