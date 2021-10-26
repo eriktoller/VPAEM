@@ -2,7 +2,7 @@
 # VPAEM (Vertical Plane Analytic Element Model)
 The Vertical Plane Analytic Element Model (VPAEM) is a computer program for modelling groundwater flow in the vertical plane. The program includes multiple groundwater features, e.g. fractures, cavities, inhomogeneities and more. The program is written in `C++` and run through a *MATLAB* script.
 
-The program has been developed based on the limitless analytic element introduced in Strack (2018) and include:
+The program uses analytical elements, see Strack (1989, 2003, 2017, 2018), and include:
 - constant pressure elements
 - inhomogeneities
 - drainging fracutres
@@ -88,7 +88,17 @@ The program has been used in the following paper:
 - Comming soon.
 
 ## References
+Guennebaud, G., Jacob, B., et al. (2010). *Eigen v3*. http://eigen.tuxfamily.org.
+
+Strack, O. D. L. (1989). Groundwater mechanics. prentice hall.
+
+Strack, O. D. L. (2003). Theory and applications of the analytic element method. Reviews of Geophysics, 41(2).
+
+Strack, O. D. (2017). Analytical groundwater mechanics. Cambridge University Press.
+
 Strack, O. D. L. (2018). Limitless analytic elements. *Water Resources Research*, 54(2), 1174-1190.
 
-Guennebaud, G., Jacob, B., et al. (2010). *Eigen v3*. http://eigen.tuxfamily.org.
+
+
+
 
