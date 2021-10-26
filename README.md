@@ -1,4 +1,4 @@
-![logo](https://github.com/eriktoller/VPAEM/blob/main/VPAEM_logo.png)
+![VPAEM logo](https://github.com/eriktoller/VPAEM/blob/main/VPAEM_logo.png)
 # VPAEM (Vertical Plane Analytic Element Model)
 The Vertical Plane Analytic Element Model (VPAEM) is a computer program for modelling groundwater flow in the vertical plane. The program includes multiple groundwater features, e.g. fractures, cavities, inhomogeneities and more. The program is written in `C++` and run through a *MATLAB* script.
 
