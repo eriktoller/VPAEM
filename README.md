@@ -76,7 +76,7 @@ This list contains all the definitions of the input data defined in `run_VPAEM.m
 The following functions are necissary for the plotting scheme in *MATLAB*:
 - `creat_figure.m` creat the figure window
 - `Plot_line.m` plots a line from `z1` to `z2`
-- `Plot_cric.m` plots a circle
+- `Plot_cricle.m` plots a circle
 - `Contour_flow_net.m` contours the flow net
 - `Phi_from_fi.m` computes the discharge potiential
 
